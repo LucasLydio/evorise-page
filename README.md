@@ -2,7 +2,7 @@
 
 _Evolua a cada corrida. Transforme cada passo em progresso real._
 
-![Evorise Banner](assets/img/evorise.PNG) <!-- Adapte o caminho do banner ou remova esta linha se não houver banner -->
+![Evorise Banner](public/assets/img/evorise.PNG) <!-- Adapte o caminho do banner ou remova esta linha se não houver banner -->
 
 ## Sobre o projeto
 
