@@ -5,6 +5,7 @@
   --blue-btn: #112c4c;
   --text: #23232e;
   --gray: #6c757d;
+  --gray-trasnparent: #6c757d1f;
   --bg: #fff;
   --font-main: 'Montserrat', sans-serif;
   --font-highlight: "Shadows Into Light", cursive ;
@@ -12,7 +13,9 @@
   --radius: 24px;
   --container-width: 1200px;
 }
-
+.hr {
+    color: var(--gray);
+}
 /* Reset básico */
 body {
   margin: 0;
@@ -36,9 +39,15 @@ body {
     border-bottom: 1px solid #eee;
     padding: .5rem 0;
     z-index: 1000;
+    border-bottom: 1px solid var(--gray-trasnparent);
     @media (max-width: 780px) {
         padding: 1.5rem 0;
-        
+        .logo {
+            img {
+                width: 100px;
+                height: auto;
+            }
+        }
     }
 }
 .logo {
@@ -329,11 +338,26 @@ h1 {
   /* max-width: 600px; */
   @media (max-width: 700px) {
     .why-desc, .why-list li {
-        font-size: .97rem;
+        font-size: .92rem;
     }
     .why-list {
         text-align: left;
-        margin-bottom: .5rem;
+        margin-bottom: 1.5rem;
+        li {
+        margin-bottom: 1rem;
+
+        }
+        .check {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+    }
+    .quote-text {
+       text-align: justify;
+       margin-bottom: .9rem;
+    }
+    .quote-author {
+        font-size: .9rem;
     }
 
   }
@@ -369,7 +393,7 @@ h1 {
   font-size: 1.09rem;
   width: 1.5em;
   height: 1.5em;
-  line-height: 1.5em;
+  /* line-height: 1.5em; */
   text-align: center;
   margin-right: 0.8em;
   font-weight: 700;
